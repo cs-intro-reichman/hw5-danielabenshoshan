@@ -113,7 +113,7 @@ public class Scrabble {
 			} else{
 				if(!isWordInDictionary(input)){
 					System.out.println("No such word in the dictionary. Try again.");
-					System.out.println("");
+					//System.out.println("");
 				}else {
 					if(!MyString.subsetOf(input, hand)){
 					System.out.println("Invalid word. Try again.");
@@ -164,7 +164,7 @@ public class Scrabble {
 		//testBuildingTheDictionary();  
 		//testScrabbleScore();    
 		//testCreateHands();  
-		testPlayHands();
+		//testPlayHands();
 		playGame();
 	}
 
@@ -174,7 +174,7 @@ public class Scrabble {
 		for (int i = 0; i < 5; i++) {
 			System.out.println(DICTIONARY[i]);
 		}
-		System.out.println(isWordInDictionary("mango"));
+		System.out.println(isWordInDictionary("aah"));
 	}
 	
 	public static void testScrabbleScore() {
@@ -193,6 +193,6 @@ public class Scrabble {
 		init();
 		//playHand("ocostrza");
 		//playHand("arbffip");
-		playHand("aretiin");
+		//playHand("aretiin");
 	}
 }
